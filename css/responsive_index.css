@@ -1,0 +1,146 @@
+@media screen and (max-width: 768px)
+{
+	nav
+	{
+		display: block;
+		padding: 20px;
+		background-color: black;
+		color: #fff;
+	}
+	nav h2
+	{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	nav ul li
+	{
+		display: inline;
+		list-style-type: none;
+		margin: 3px;
+	}
+	nav ul li a
+	{
+		line-height: 30px;
+		border: 1px solid #fff;
+		padding: 5px 10px;
+		font-size: 12px;
+		border-radius: 20px;
+	}
+
+
+
+
+
+
+	
+	.header
+	{
+		padding: 40px;
+	}
+	.header h3
+	{
+		text-align: center;
+		margin: 0 0 25px;
+		font-size: 30px;
+		text-shadow: 1px -1px 6px grey;
+	}
+	.header h5
+	{
+		font-size: 22px;
+		margin: 0 0 23px;
+	}
+
+
+	.header .contentContainer .content
+	{
+	/*	list-style-type: lower-roman;*/
+		margin: 0 0 30px;
+	}
+	.header .contentContainer .content p.pname
+	{
+		font-size: 18px;
+	}
+	.header .contentContainer .content p.summary
+	{
+		font-size: 16px;
+		letter-spacing: 0.4px;
+		padding: 10px 0 10px;
+	}
+	.header .contentContainer .content a
+	{
+		display: inline-block;
+		text-decoration: none;
+		color: #f2f2f2;
+		padding: 13px;
+		font-size: 14px;
+		background-color: #000;
+		text-transform: uppercase;
+		font-weight: bolder;
+	}
+
+
+
+
+
+	.footer
+	{
+		padding: 40px;
+	}
+	.footer .aboutUs
+	{
+		width: 100%;
+	}
+	.footer .aboutUs h2
+	{
+		margin: 0 0 10px;
+		font-size: 18px;
+	}
+	.footer .aboutUs p
+	{
+		line-height: 20px;
+		letter-spacing: 0.5px;
+		word-spacing: 1.1px;
+		font-size: 12px;
+	}
+
+
+
+	.footer .socialLinks
+	{
+		margin: 30px 0 0;
+		width: 100%;
+		padding: 0;
+	}
+	.footer .socialLinks h2
+	{
+		margin: 0 0 10px;
+		font-size: 18px;
+	}
+	.footer .socialLinks ul li
+	{
+		margin: 0 0 2px;
+	}
+	.footer .socialLinks ul li a
+	{
+		font-size: 12px;
+	}
+
+
+
+	.copyright
+	{
+		padding: 10px 13px
+	}
+	.copyright p
+	{
+		font-weight: lighter;
+		color: #f2f2f2;
+		font-size: 12px;
+	}
+	.copyright p a
+	{
+		text-decoration: none;
+		color: #dbdbdb;
+	}
+
+}
