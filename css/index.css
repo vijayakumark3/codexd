@@ -1,27 +1,52 @@
+:root
+{
+	--black-clr-1: #000;
+	--white-clr-1: #f2f2f2;
+}
+
 *
 {
 	margin: 0;
 	padding: 0;
 }
+html
+{
+	scroll-behavior: smooth;
+}
 body
 {
 	margin: 0;
 	padding: 0;
-	background-color: #f2f2f2;
+	background-color: var(--white-clr-1);
 	font-family: 'Poppins', sans-serif;
 }
 
 nav
 {
-	display: block;
-	padding: 30px;
-	background-color: black;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+	background-color: transparent;
 	color: #fff;
+    box-sizing: border-box;
+    z-index: 999;
+    transition: 0.4s;
 }
-nav h2
+
+.logoEle
 {
-	float: left;
-	line-height: 40px;
+	width: auto;
+	height: 45px;
+}
+
+nav img
+{
+	height: 45px;
+	width: auto;
+/*	border: 3px solid green;*/
 }
 nav ul
 {
@@ -31,27 +56,134 @@ nav ul li
 {
 	display: inline;
 	list-style-type: none;
-	margin: 3px;
 }
 nav ul li a
 {
-	line-height: 40px;
+	margin: 0 0 0 3px;
+	padding: 10px 20px;
+	border: 1px solid #fff;
+	line-height: 45px;
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #f2f2f2;
-	border: 2px solid #fff;
-	padding: 10px 20px;
+    transition: 0.4s;
 }
-
+nav ul li a:hover
+{
+	background: var(--black-clr-1);
+	color: var(--white-clr-1);
+	border: 1px solid var(--black-clr-1);
+/*	text-shadow: 10px 10px 5px red;*/
+	box-shadow: 0 0 2px var(--white-clr-1);
+}
 nav .cleardiv
 {
 	clear: both;
 }
 
 
+/* banner_section */
+
+.banner_sec
+{
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;/*
+	position: relative;*/
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner_sec .banner_content
+{
+	/*width: 0;
+	height: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;*/
+}
+.banner_sec .banner_content p
+{
+	color: var(--white-clr-1);
+	font-size: 70px;
+/*	font-size: 500%;*/
+/*	margin: 10% 0 0;*/
+	text-shadow: 10px 10px 10px var(--black-clr-1);
+}
+/*.banner_sec .banner_content img
+{
+	width: 150px;
+	height: auto;
+/*	max-width: 20%;
+}*/
+
+
+/*container.........*/
+.container
+{
+	width: 90%;
+	max-width: 1200px;
+	margin: 100px auto;
+	display: grid;
+	grid-template-rows: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+	grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(100px, 1fr);
+	grid-gap: 40px;
+	grid-auto-flow: row;
+	grid-auto-rows: minmax(100px, 1fr);
+}
+.box
+{
+	border: 1px solid black;
+	height: 300px;
+	position: relative;
+	overflow: auto;
+}
+.box img
+{
+	display: inline-block;
+	width: 100%;
+	height: 45%;
+/*	aspect-ratio: 3/1;*/
+	object-fit: cover;
+}
+.box h3
+{
+	display: inline-block;
+	font-size: 18px;
+	margin: 0 0 0 10px;
+}
+.box p
+{
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 10px;
+/*	max-width: 90%;*/
+}
+.box a
+{
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 10px 10px;
+
+}
+
+/*.box1
+{
+	grid-row-start: ;
+}*/
+
+
 /*headline..........*/
 
-.header
+/*.header
 {
 	padding: 50px;
 }
@@ -69,12 +201,12 @@ nav .cleardiv
 }
 .header .contentContainer
 {
-/*	display: list-item;*/
-/*	list-style: numbers;*/
+/*	display: list-item;
+/*	list-style: numbers;
 }
 .header .contentContainer .content
 {
-/*	list-style-type: lower-roman;*/
+/*	list-style-type: lower-roman;
 	margin: 0 0 30px;
 }
 .header .contentContainer .content p.pname
@@ -97,7 +229,7 @@ nav .cleardiv
 	background-color: #000;
 	text-transform: uppercase;
 	font-weight: bolder;
-}
+}*/
 
 
 
@@ -122,9 +254,11 @@ nav .cleardiv
 }
 .footer .aboutUs p
 {
-	line-height: 20px;
+	line-height: 21px;
 	letter-spacing: 0.5px;
 	word-spacing: 1.1px;
+	font-size: 15px;
+	color: #dbdbdb;
 }
 
 .footer .socialLinks
@@ -148,13 +282,13 @@ nav .cleardiv
 .footer .socialLinks ul li a
 {
 	text-decoration: none;
-	color: #fff;
+	color: #dbdbdb;
 /*	font-weight: bolder;*/
 	font-size: 15px;
 }
 .footer .socialLinks ul li a:hover
 {
-	color: red;
+	color: grey;
 }
 
 
@@ -168,16 +302,21 @@ nav .cleardiv
 {
 	background-color: #000;
 	text-align: center;
-	padding: 15px 50px;
+	padding: 25px 50px;
 }
 .copyright p
 {
-	font-weight: bold;
+	font-size: 12px;
+/*	font-weight: 600;*/
 	color: #f2f2f2;
 }
 .copyright p a
 {
 	text-decoration: none;
 	color: #dbdbdb;
+}
+.copyright p a:hover
+{
+	color: grey;
 }
 

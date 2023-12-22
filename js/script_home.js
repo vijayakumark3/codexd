@@ -1,1 +1,0 @@
-document.write("<b>this is from js folder of script_home file :) mf</b>");

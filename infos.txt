@@ -1,0 +1,9 @@
+json
+
+	serparat files if't's possible :
+
+	index
+	nav
+	footer
+	postpage
+	post preview

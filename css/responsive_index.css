@@ -30,10 +30,19 @@
 
 
 
+	/* container */
 
+	.container
+	{
+		margin: 50px auto;
+	}
+	.container .box
+	{
+		height: 180px;
+	}
 
 	
-	.header
+	/*.header
 	{
 		padding: 40px;
 	}
@@ -48,12 +57,12 @@
 	{
 		font-size: 22px;
 		margin: 0 0 23px;
-	}
+	}*/
 
 
-	.header .contentContainer .content
+	/*.header .contentContainer .content
 	{
-	/*	list-style-type: lower-roman;*/
+	/*	list-style-type: lower-roman;
 		margin: 0 0 30px;
 	}
 	.header .contentContainer .content p.pname
@@ -76,7 +85,7 @@
 		background-color: #000;
 		text-transform: uppercase;
 		font-weight: bolder;
-	}
+	}*/
 
 
 
@@ -143,4 +152,42 @@
 		color: #dbdbdb;
 	}
 
+}
+
+@media screen and (max-width: 425px)
+{
+	/* container */
+
+	.container
+	{
+		width: 85%;
+		margin: 25px auto;
+		grid-gap: 25px;
+		grid-template-rows: minmax(100px, 1fr) minmax(100px, 1fr);
+		grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
+	}
+	.container .box
+	{
+		height: 180px;
+	}
+}
+
+
+
+@media screen and (max-width: 320px)
+{
+	/* container */
+
+	.container
+	{
+		width: 85%;
+		margin: 25px auto;
+		grid-gap: 25px;
+		grid-template-rows: minmax(auto, 1fr);
+		grid-template-columns: minmax(100px, 1fr);
+	}
+	.container .box
+	{
+		height: 200px;
+	}
 }
