@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-	var paragraphs = document.querySelectorAll('.previewPara');
-	var maxLength = 160;
+	var paragraphs = document.querySelectorAll('.boxPara p');
+	var maxLength = 238;
 
 	paragraphs.forEach(function(paragraph) {
 		var text = paragraph.textContent;

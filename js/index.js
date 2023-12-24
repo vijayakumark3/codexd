@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	    if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
 	        navbar.style.backgroundColor = "#000";
 
-			var navlinks = document.querySelectorAll('.navlinks');
+			// var navlinks = document.querySelectorAll('.navlinks');
 	        
-	        navlinks.style.backgroundColor = "#fff";
-	        navlinks.style.color = "#000";
+	        // navlinks.style.backgroundColor = "#fff";
+	        // navlinks.style.color = "#000";
 	    } else {
 	        navbar.style.backgroundColor = "transparent";
 	    }
